@@ -1,6 +1,8 @@
 # Reptilog
 
-![logo]
+<p align="center">
+  <img src="./reptilog-icon.png" alt="Reptilog Logo" width="200"/>
+</p>
 
 > An AI-enabled changelog inspired by Greptile. Built with [Probot](https://github.com/probot/probot).
 
@@ -17,5 +19,3 @@ For the public,
 ## License
 
 [ISC](LICENSE) © 2025 Giovanni Assad
-
-[logo]: https://github.com/giovabattelli/reptilog-full/reptilog-icon.png "Reptilog"
