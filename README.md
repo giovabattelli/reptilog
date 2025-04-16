@@ -1,6 +1,6 @@
 # Reptilog
 
-![alt text][logo]
+![logo]
 
 > An AI-enabled changelog inspired by Greptile. Built with [Probot](https://github.com/probot/probot).
 
