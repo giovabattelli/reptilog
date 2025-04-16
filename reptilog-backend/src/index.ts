@@ -6,7 +6,7 @@ import { build_prompt } from "./prompt-builder.js";
 import { construct_objects } from "./object-construction.js";
 import { verify_pr } from "./validate-pr.js";
 
-import fs from "fs";
+//import fs from "fs";
 
 /**
  * Entry point
@@ -52,9 +52,9 @@ async function process_pr(context: any) {
   await send_changelog_to_frontend(changelog, pull_request.number);
 
   // For debugging - save the data
-  fs.writeFileSync(
-    `pr-${pullRequest.number}.json`,
-    JSON.stringify(pullRequest, null, 2)
-  );
+  // fs.writeFileSync(
+  //   `pr-${pullRequest.number}.json`,
+  //   JSON.stringify(pullRequest, null, 2)
+  // );
 
 }

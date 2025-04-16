@@ -1,5 +1,6 @@
 import { PullRequest } from "./types/interfaces.js";
-import fs from "fs";
+
+// import fs from "fs";
 
 /**
  * Build the prompt for the OpenAI API
@@ -32,8 +33,8 @@ export function build_prompt(pullRequest: PullRequest): [string, string] {
   
   Remember to return only valid JSON with the title and description fields.`;
 
-    fs.writeFileSync("userPrompt.txt", userPrompt);
-    fs.writeFileSync("systemPrompt.txt", systemPrompt);
+    // fs.writeFileSync("userPrompt.txt", userPrompt);
+    // fs.writeFileSync("systemPrompt.txt", systemPrompt);
 
     return [systemPrompt, userPrompt];
 }
