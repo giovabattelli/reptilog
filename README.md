@@ -1,5 +1,7 @@
 # Reptilog
 
+![alt text][logo]
+
 > An AI-enabled changelog inspired by Greptile. Built with [Probot](https://github.com/probot/probot).
 
 ## Decision Rationale
@@ -15,3 +17,5 @@ For the public,
 ## License
 
 [ISC](LICENSE) © 2025 Giovanni Assad
+
+[logo]: https://github.com/giovabattelli/reptilog-full/reptilog-icon.png "Reptilog"
