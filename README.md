@@ -14,6 +14,8 @@
   </a>
 </div>
 
+After merging a PR to your production branch, Reptilog uses LLMs to translate the data associated with all the commits of that PR (including commit message, changes per file, etc.) into a user friendly changelog.
+
 ## Get Started
 
 1. Clone the repository.
