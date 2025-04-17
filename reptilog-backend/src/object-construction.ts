@@ -4,13 +4,14 @@ import { PullRequest } from "./types/interfaces.js";
 /**
  * Construct the data objects
  * @param pull_request The pull request
- * @returns PullRequest
+ * @returns PullRequest Object storing specific PR information
  */
-export async function construct_objects(context: any, pull_request: any): Promise<PullRequest> {
+export async function constructObjects(context: any, pull_request: any): Promise<PullRequest> {
 
-    // Get the commits for this PR (request commits from PR commits href)
+    // Get the commits href for this PR
     const commitsResponse = await context.octokit.request(pull_request._links.commits.href)
 
+    // Array to store commits associated with this PR
     const commits: Commit[] = [];
 
     for (const commitData of commitsResponse.data) {
@@ -33,7 +34,7 @@ export async function construct_objects(context: any, pull_request: any): Promis
             additions: file.additions,
             deletions: file.deletions,
             changes: file.changes,
-            patch: file.patch // Contains literal diff for changes to a file
+            patch: file.patch // Literal diff in string format
         }));
 
         // Create + add commit object to commits array
@@ -44,7 +45,7 @@ export async function construct_objects(context: any, pull_request: any): Promis
         });
     }
 
-    // Create the PR object with commits
+    // Create the PR object with Commit[] array
     const pr = context.payload.pull_request;
     const pullRequest: PullRequest = {
         number: pr.number,

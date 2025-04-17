@@ -116,7 +116,15 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Grid Background Pattern */
+.bg-grid-pattern {
+  background-image: linear-gradient(to left, #e5e7eb 1px, transparent 1px),
+    linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
+  background-size: 13rem 13rem;
 }

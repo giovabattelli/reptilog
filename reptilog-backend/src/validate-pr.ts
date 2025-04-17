@@ -1,12 +1,13 @@
+
 /**
  * Verify the PR is merged and merged into a production branch
  * @param pull_request 
  * @returns boolean indicating if PR is valid for processing
  */
-export function verify_pr(pull_request: any, baseBranch: any): boolean {
+export function verifyPr(pull_request: any, baseBranch: any): boolean {
     const mainBranchNames = ['main', 'master'];
 
-    // filter out PRs that are not merged
+    // Filter out PRs that are not merged
     if (!pull_request.merged) {
         console.log(`PR #${pull_request.number} was closed without merging. Skipping.`);
         return false;

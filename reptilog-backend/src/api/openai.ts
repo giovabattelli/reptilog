@@ -7,7 +7,7 @@ import { PullRequest } from "../types/interfaces.js";
  * @param pullRequest
  * @returns Changelog
  */
-export async function send_pr_to_openai(userPrompt: string, systemPrompt: string, pullRequest: PullRequest): Promise<Changelog> {
+export async function sendPrToOpenAI(userPrompt: string, systemPrompt: string, pullRequest: PullRequest): Promise<Changelog> {
 
     const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 

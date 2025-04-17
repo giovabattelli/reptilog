@@ -4,7 +4,7 @@
   <img src="./reptilog-icon.png" alt="Reptilog Logo" width="200"/>
 </p>
 
-> An AI-enabled changelog inspired by Greptile. Built with [Probot](https://github.com/probot/probot).
+> An AI-powered changelog inspired by Greptile. Built with [Probot](https://github.com/probot/probot).
 
 ## Decision Rationale
 ### Developer-facing design choices
