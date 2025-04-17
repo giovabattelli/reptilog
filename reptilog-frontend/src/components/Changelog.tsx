@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { BlurFade } from './magicui/blur-fade';
+import Image from 'next/image';
 import {
     Pagination,
     PaginationContent,
@@ -109,9 +110,20 @@ export default function Changelog() {
     };
 
     return (
-        <div className="w-full max-w-4xl mx-auto py-8 px-4">
+        <div className="w-full max-w-4xl mx-auto py-1 px-4">
             <BlurFade duration={0.5} delay={0.1}>
-                <h2 className="text-3xl font-bold mb-8 text-center">Changelog</h2>
+                <div className="text-center mb-6">
+                    <div className="flex justify-center mb-2">
+                        <Image
+                            src="/reptilog-icon.png"
+                            alt="Reptilog Logo"
+                            width={120}
+                            height={120}
+                            className="rounded-lg"
+                        />
+                    </div>
+                    <h2 className="text-3xl font-bold">Changelog</h2>
+                </div>
             </BlurFade>
 
             {loading ? (
@@ -126,17 +138,17 @@ export default function Changelog() {
                                 <div className="bg-card rounded-lg shadow-sm overflow-hidden">
                                     <button
                                         onClick={() => toggleEntry(entry.id)}
-                                        className="w-full p-6 flex justify-between items-center text-left hover:bg-muted/50 transition-colors"
+                                        className="w-full p-6 flex flex-col text-left hover:bg-muted/50 transition-colors"
                                     >
-                                        <h3 className="text-xl font-semibold">{entry.title}</h3>
-                                        <div className="flex items-center space-x-4">
-                                            <span className="text-sm text-muted-foreground">
-                                                {formatDate(entry.date)}
-                                            </span>
+                                        <div className="flex items-start justify-between mb-2">
+                                            <h3 className="text-xl font-semibold pr-4">{entry.title}</h3>
                                             <ChevronDown
-                                                className={`h-5 w-5 text-muted-foreground transition-transform duration-200 ${openEntries[entry.id] ? 'rotate-180' : ''}`}
+                                                className={`h-5 w-5 mt-1 flex-shrink-0 text-muted-foreground transition-transform duration-200 ${openEntries[entry.id] ? 'rotate-180' : ''}`}
                                             />
                                         </div>
+                                        <span className="text-sm text-muted-foreground">
+                                            {formatDate(entry.date)}
+                                        </span>
                                     </button>
 
                                     <AnimatePresence>
