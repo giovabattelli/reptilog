@@ -3,6 +3,8 @@
 import { useEffect, useState } from 'react';
 import { BlurFade } from './magicui/blur-fade';
 import Image from 'next/image';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import {
     Pagination,
     PaginationContent,
@@ -161,8 +163,10 @@ export default function Changelog() {
                                                 className="border-t"
                                             >
                                                 <div className="p-6">
-                                                    <div className="prose prose-sm dark:prose-invert">
-                                                        <div dangerouslySetInnerHTML={{ __html: entry.md_description.replace(/\n/g, '<br/>') }} />
+                                                    <div className="prose prose-sm dark:prose-invert max-w-none">
+                                                        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                                                            {entry.md_description}
+                                                        </ReactMarkdown>
                                                     </div>
                                                     <div className="mt-4 text-sm text-muted-foreground">
                                                         Pull Request #{entry.prNumber}

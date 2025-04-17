@@ -1,6 +1,13 @@
 {
   "changelogs": [
     {
+      "id": "3-1744914585808",
+      "date": "2025-04-17T18:29:35Z",
+      "title": "Enhanced Health Records & Task Scheduling Features",
+      "md_description": "We've significantly enhanced our platform with new features aimed at improving user experience and data management.\n\n- **Comprehensive Health Records**: Users can now track detailed health records for their reptiles, including veterinary visits, medication, and follow-up reminders. This feature ensures better health management with notifications for upcoming follow-ups and the ability to view veterinary and medication history.\n\n- **Task Scheduling and Reminders**: We've implemented a robust task scheduling system that supports recurring maintenance reminders. Users can manage tasks with different priorities and receive notifications for upcoming and overdue tasks, ensuring timely care and maintenance.\n\n- **Data Import/Export**: To facilitate data management, users can now import and export their data in JSON and CSV formats. This feature supports seamless data transfer for backup or migration purposes, enhancing data accessibility and user control.\n\nThese updates aim to streamline health management and task scheduling, providing users with tools to maintain comprehensive records and ensure timely care for their reptiles.",
+      "prNumber": 3
+    },
+    {
       "id": "15-1744904412067",
       "date": "2025-04-17T15:40:07Z",
       "title": "Add dark mode support across the application",

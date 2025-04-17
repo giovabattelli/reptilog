@@ -6,6 +6,14 @@
 
 > An AI-powered changelog inspired by Greptile. Built with [Probot](https://github.com/probot/probot) and OpenAI for the backend, [Next.js](https://nextjs.org/) with the App Router, [Lowdb](https://github.com/typicode/lowdb) for data storage, [Tailwind CSS](https://tailwindcss.com/) for styling, [Framer Motion](https://www.framer.com/motion/) for animations, and [Lucide](https://lucide.dev/) for icons.
 
+## Demo
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=VwZVTnq4_Sc" target="_blank">
+    <img src="https://img.youtube.com/vi/VwZVTnq4_Sc/maxresdefault.jpg" alt="Reptilog Demo Video" width="600" />
+  </a>
+</div>
+
 ## Get Started
 
 1. Clone the repository.
