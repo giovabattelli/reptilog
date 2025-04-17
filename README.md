@@ -42,7 +42,7 @@ After merging a PR to your production branch, Reptilog uses LLMs to translate th
 
 5. Create a pull request to a production branch (main/master) of the repository with the GitHub bot installed. Make sure the frontend and backend are running. If everything is set up correctly and you refresh the page of your frontend (localhost:3001), your latest changelog will display at the top of the first page of changelogs.
 
-## Decision Rationale
+## Design Choices
 #### Developer-facing design choices
 A big decision for me was how and when to create a changelog entry. Initially, I wanted to make it such that a developer could create a GitHub issue with a special tag, which would summon the reptilog and create the changelog for all of the commits between the most recent commit and the last changelog. I eventually settled on having the GitHub bot automatically create a changelog based on the commits of a pull request to a main/master branch. 
 
