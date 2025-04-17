@@ -7,7 +7,25 @@ import { PullRequest } from "./types/interfaces.js";
  */
 export function buildPrompt(pullRequest: PullRequest): [string, string] {
   const systemPrompt = `You are a changelog generator. You will be given a pull request with its commits and file changes, and your task is to generate a concise, customer-facing changelog entry. You are writing in the perspective of the team that made the changes.
-  
+
+  Make sure to include a good amount of details in the description. That includes, implications for users, cost implications, etc.
+  For example, a good changelog title and descriptionfor a small PR would look like this:
+
+<title example>
+  Added system-wide dark mode support
+</title>
+
+<description example>
+  We've added system-wide dark mode support to improve user experience in low-light environments.
+
+- Implemented automatic theme detection based on system preferences
+- Created new dark color palette that maintains WCAG AA contrast ratios
+- Added smooth transitions between light and dark modes
+- Fixed several UI inconsistencies in navigation components
+
+This completes the dark mode implementation requested in issue #42.
+</end example>
+
   Your response MUST be valid JSON with exactly these fields:
   {
     "title": "A short, one-line title summarizing the main change or feature (50 chars max)",
