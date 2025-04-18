@@ -22,13 +22,6 @@ type ChangelogResponse = {
     totalPages: number;
 };
 
-// Define a type for the code component props
-interface CustomCodeProps {
-    inline?: boolean;
-    className?: string;
-    children?: React.ReactNode;
-}
-
 export default function Changelog() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
