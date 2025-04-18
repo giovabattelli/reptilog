@@ -6,6 +6,8 @@
 
 > An AI-powered changelog inspired by [Greptile](https://greptile.com). Built with [Probot](https://github.com/probot/probot) and [OpenAI](https://openai.com/index/hello-gpt-4o/) for the backend, [Next.js](https://nextjs.org/) with the App Router, [Lowdb](https://github.com/typicode/lowdb) for data storage, [Tailwind CSS](https://tailwindcss.com/) for styling, [Framer Motion](https://www.framer.com/motion/) for animations, and [Lucide](https://lucide.dev/) for icons.
 
+- After merging a PR to your production branch, Reptilog uses LLMs to translate the data associated with all the commits of that PR (including commit message, changes per file, etc.) into a user friendly changelog.
+
 ## Demo
 
 <div align="center">
@@ -21,8 +23,6 @@
     <img src="https://img.youtube.com/vi/P4eJZNW41GI/maxresdefault.jpg" alt="Reptilog New UI" width="600" />
   </a>
 </div>
-
-After merging a PR to your production branch, Reptilog uses LLMs to translate the data associated with all the commits of that PR (including commit message, changes per file, etc.) into a user friendly changelog.
 
 ## Get Started
 
