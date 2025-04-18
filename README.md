@@ -4,7 +4,7 @@
   <img src="./reptilog-icon.png" alt="Reptilog Logo" width="200"/>
 </p>
 
-> An AI-powered changelog inspired by [Greptile](https://greptile.com). Built with [Probot](https://github.com/probot/probot) and OpenAI for the backend, [Next.js](https://nextjs.org/) with the App Router, [Lowdb](https://github.com/typicode/lowdb) for data storage, [Tailwind CSS](https://tailwindcss.com/) for styling, [Framer Motion](https://www.framer.com/motion/) for animations, and [Lucide](https://lucide.dev/) for icons.
+> An AI-powered changelog inspired by [Greptile](https://greptile.com). Built with [Probot](https://github.com/probot/probot) and [OpenAI](https://openai.com/index/hello-gpt-4o/) for the backend, [Next.js](https://nextjs.org/) with the App Router, [Lowdb](https://github.com/typicode/lowdb) for data storage, [Tailwind CSS](https://tailwindcss.com/) for styling, [Framer Motion](https://www.framer.com/motion/) for animations, and [Lucide](https://lucide.dev/) for icons.
 
 ## Demo
 
