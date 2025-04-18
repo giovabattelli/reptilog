@@ -14,6 +14,14 @@
   </a>
 </div>
 
+- Updated UI/UX with Markdoown suppport within changelog entries:
+
+<div align="center">
+  <a href="https://youtu.be/P4eJZNW41GI" target="_blank">
+    <img src="https://img.youtube.com/vi/P4eJZNW41GI/maxresdefault.jpg" alt="Reptilog New UI" width="600" />
+  </a>
+</div>
+
 After merging a PR to your production branch, Reptilog uses LLMs to translate the data associated with all the commits of that PR (including commit message, changes per file, etc.) into a user friendly changelog.
 
 ## Get Started
