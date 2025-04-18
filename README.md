@@ -14,7 +14,7 @@
   </a>
 </div>
 
-- Updated UI/UX with Markdoown suppport within changelog entries:
+- Updated UI/UX with Markdown support within changelog entries:
 
 <div align="center">
   <a href="https://youtu.be/P4eJZNW41GI" target="_blank">
