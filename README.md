@@ -24,6 +24,14 @@
   </a>
 </div>
 
+## How does it work?
+
+Reptilog is composed of a GitHub bot and a frontend user-facing website. The GitHub bot code is within `reptilog-backend`, and the website code is within `reptilog-frontend`. 
+
+With the GitHub bot installed onto your GitHub repository (or repositories) of choice and both the frontend and backend running (see the "Get Started" section below for more information), you can create a PR to a main/master branch, and the bot is activated once your PR is merged (via the `pull_request.closed` GitHub webhook). The bot then fetches the appropriate commits corresponding to your pull request on that repo and sends all the information within the commits (including commit messages, file diffs, etc.) to an OpenAI LLM. Via some clever prompting, the LLM constructs a user-friendly changelog using all the commits it was given. The LLM then returns a properly structures JSON object containing a markdown-formatted changelog title and description for that PR. The JSON message is subsequently sent from the GitHub bot to the frontend via a POST request to the frontend. Upon receiving this POST request, the user-facing website then writes to its JSON database with the new changelog and its metadata (date, PR #, etc).
+
+The developer doesn't need to worry about a thing. All they need to do is create the PR, and the changelog is automatically generated within less than a minute. Upon refresh, the website fetches the latest changelogs stored within the database, sorted from newest to oldest, and in paginated format.
+
 ## Get Started
 
 1. Clone the repository.
