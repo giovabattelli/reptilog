@@ -38,7 +38,7 @@ The developer doesn't need to worry about a thing. All they need to do is create
 
 2. Download dependencies for both portions (`npm i` from the `reptilog-frontend` and `reptilog-backend` directories).
 
-3. Create a GitHub bot on your GitHub account and install it onto a repository of your choice. Make sure the permissions shown in the images below are selected for your GitHub bot. In order to link your GitHub bot to your locally-cloned repository, make sure to take a look at `./reptilog-backend/.env.example`. You can find most of the `.env` variables within the main page of your GitHub bot settings. For more information on connecting the bot, read [this](https://probot.github.io/docs/development/#manually-configuring-a-github-app) from Probot's docs. You will need an [OpenAI](https://platform.openai.com/docs/overview) key as well. Also, make sure to set up your `.env` file within the `reptilog-frontend` as well. Check the `./reptilog-frontend/.env.example`.
+3. Create a GitHub bot on your GitHub account and install it onto a repository of your choice. Make sure the permissions shown in the images below are selected for your GitHub bot. In order to link your GitHub bot to your locally-cloned repository, make sure to take a look at `./reptilog-backend/.env.example`. You can find most of the `.env` variables within the main page of your GitHub bot settings. For more information on connecting the bot, read [this](https://probot.github.io/docs/development/#manually-configuring-a-github-app) from Probot's docs. You will need an [OpenAI](https://platform.openai.com/docs/overview) key as well. Also, make sure to set up your `.env` file within the `reptilog-frontend`. Check the `./reptilog-frontend/.env.example`.
 
 <div align="center">
   <p>
