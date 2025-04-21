@@ -68,7 +68,7 @@ A lot of companies operate with a "main development" branch, to which everyone m
 For the public, I focused on a Greptile-inspired design. I imitated Greptile's beautiful and simple navbar, along with the grid pattern on their landing page. I also made sure to get the highlighting of the various links on the navbar right, and ensured the highlighting was the same color for every single link on the page. For the changelog entries, I went for a bit of a different approach; I used a dropdown-style changelog, where users can click on the dropdown to display the details of a specific changelog entry. Overall, the ui of the frontend makes for a simple and straightforward user experience.
 
 ## AI Tools used
-For development I use **Cursor** and Anthropic's Claude-3.7-sonnet; Cursor was immensely useful when I needed help going through documentation, for writing boring boilerplate code, and solving annoying linter issues. I normally use MCPs to work with frontend code, but this time I didn't need to use any MCPs (I usually like to use the MagicUI MCP when dealing with MagicUI components).
+For development I use [**Cursor**](https://www.cursor.com/) and Anthropic's Claude-3.7-sonnet; Cursor was immensely useful when I needed help going through documentation, for writing boring boilerplate code, and solving annoying linter issues. I normally use MCPs to work with frontend code, but this time I didn't need to use any MCPs (I usually like to use the MagicUI MCP when dealing with MagicUI components).
 
 ## License
 
