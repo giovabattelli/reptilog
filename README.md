@@ -56,7 +56,7 @@ The developer doesn't need to worry about a thing. All they need to do is create
 
 4. Run `npm run dev` from the `reptilog-frontend` directory. Then open a new terminal window and run `npm run build` followed by `npm start` from the `reptilog-backend` directory. The frontend will run on localhost with port 3001, and the backend will run on localhost with port 3000.
 
-5. Create a pull request to a production branch (main/master) of the repository with the GitHub bot installed. Make sure the frontend and backend are running. If everything is set up correctly and you refresh the page of your frontend (localhost:3001), your latest changelog will display at the top of the first page of changelogs.
+5. Create a pull request to a production branch (main/master) of the repository with the GitHub bot installed. Make sure the frontend and backend are running. Merge that opened PR. If everything is set up correctly and you refresh the page of your frontend (localhost:3001), your latest changelog will display at the top of the first page of changelogs.
 
 ## Design Choices
 #### Developer-facing design choices
